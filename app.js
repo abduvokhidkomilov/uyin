@@ -6,12 +6,12 @@ const h1=document.querySelector("h1")
 const p=document.querySelector("p")
 const one=document.getElementById("one")
 const two=document.getElementById("two")
+const random = Math.random()
+let result=Math.trunc(random*100+1)
 formEl.addEventListener('submit', function(e) {
     e.preventDefault()
     const raqam=formEl.number.value
-    const random = Math.random()
-    let result=Math.trunc(random*10+1)
-    if (raqam>10 || raqam<1){
+    if (raqam>100 || raqam<1){
     p.textContent="Iltimos to'g'ri raqam kiriting!! Siz kiritgan raqam 1 va 10 oralig'ida emas"
    
 }
