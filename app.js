@@ -19,9 +19,11 @@ else if(+raqam==+result) {
     h1.textContent="Siz o'yin g'olibisiz"
     p.textContent=`Men o'ylagan son ${result}`
 }
-else {
-    h1.textContent="Siz yutqazdingiz:"
-    p.textContent=`Men o'ylagan son ${result}`
+else if(result>raqam){
+    h1.textContent="Kattaroq son kiriting"
+}
+else if(result<raqam){
+    h1.textContent="Kichikroq son kiriting"
 }
    two.style.display="block"
 })
